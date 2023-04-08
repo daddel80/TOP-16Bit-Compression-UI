@@ -1,0 +1,10 @@
+  1   :  Keine Optionen angegeben!
+  2   :  Fehler in Archiv!
+  3   :  Unbekannte Komprimiermethode!
+  4   :  Nicht genug Hauptspeicher!
+  5   :  Falsche Checksumme!
+  14  :  Zu wenig Platz auf der Festplatte oder Diskette!
+  98  :  Fehler beim Anlegen des Archives!
+  101 :  Fehler beim Lesen der Input-Datei!
+  102 :  Ausgabefehler!
+  255 :  Anwender brach mit Strg-Pause oder Strg-C ab!

@@ -1,0 +1,10 @@
+   1 : Datei ist nicht auffindbar!
+   2 : Fataler Fehler
+   3 : CRC-Fehler (im Kommentar oder in der Datei selbst)!
+   4 : ARJ-Sicherheitsfehler!
+   5 : Diskette/Platte voll oder Schreibfehler!
+   6 : ôffnen des Archives oder der Datei nicht mîglich!
+   7 : Bedienungsfehler durch falsche Parameter!
+   8 : Nicht genÅgend Hauptspeicher vorhanden!
+   9 : Diese Datei ist kein ARJ Archiv!
+ 255 : Anwender brach mit Strg-C oder Strg-Pause ab!

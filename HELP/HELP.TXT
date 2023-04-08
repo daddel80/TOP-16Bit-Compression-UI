@@ -1,0 +1,803 @@
+. 1 ^wHilfe-Index zu TOP^w
+^wInfo^w
+  {Support                              :2}
+  {Einfhrung                           :3}
+^wBedienung^w
+  {TOP Fenster                          :4}
+  {Verzeichnisbaum                      :5}
+  {Dateiliste                           :6}
+  {Archivbetrachter                     :7}
+  {Dateien ausw„hlen                    :8}
+  {Laufwerk                             :9}
+^wMenoptionen^w
+  {Optionen                        F2   :20}
+  {Script                          F3   :21}
+  {DatInfo                         F4   :22}
+  {Komprimieren                    F5   :23}
+  {Dekomprimieren                  F5   :24}
+  {Unterverzeichnis erstellen      F7   :25}
+  {L”schen                         F8   :26}
+  {Packer konfigurieren            F9   :27}
+  {Ende                            Alt X:28}
+^wVerschiedenes^w
+  {Packer Fehlermeldungen               :30}
+  {TOP Umgebung                         :31}
+;
+;
+;
+. 2 ^wSupport^w
+
+ TOP - Toms Oberfl„che fr Packprogramme - Version 2.1
+ Copyright (C) 1992-95
+
+ Eine Vollversion dieses Programmes erhalten Sie bei:
+
+                 ^wMultimedia-Service^w
+                 ^wBurkhard Pabst^w
+                 ^wMax-Josef-Metzger-Str. 25^w 
+                 ^w14772 Brandenburg^w
+                 ^wTel./Fax (03381) 761598
+
+;
+;
+;
+. 3 ^wEinfhrung^w
+
+ ^wTOP - Toms Oberfl„che fr Packprogramme - Version 2.1^w
+ ^wCopyright (C) 1992-94^w
+
+ wurde entworfen und entwickelt von:  ^wThomas Kn”fel^w
+
+ Sehr geehrte Damen und Herren, 
+
+endlich haben Sie ein Programm mit dem Sie unkompliziert
+Backups durchfhren k”nnen. Der Wust an Packprogrammen
+scheint unermeálich zu sein, von denen die meisten keine
+Benutzeroberfl„che besitzen. Die einzige Alternative war
+bisher das Schreiben von unkomfortablen Batchdateien.
+Mit diesem Archivmanager sind Sie in der Lage Ihre 
+Packprogramme unter einer einheitlichen Benutzeroberfl„che
+zu nutzen.
+
+Bei der Programmierung und Entwicklung dieses Programmes
+habe ich versucht, den umfangreichen Befehlsumfang der
+Packprogramme m”glichst detailiert zu bercksichtigen.
+
+Anregungen und Hinweise die zur Verbesserung des Programmes 
+fhren nehme ich gerne entgegen. Wenden Sie sich bitte an 
+meinen Distributor.
+
+Zus„tzliche Informationen zum Copyright werden Ihnen
+angezeigt, wenn Sie die TOP šberschrift mit der
+linken Maustaste anklicken.
+
+;
+;
+;
+. 4 ^wTOP Fenster^w
+
+In dem Fenster der linken Seite werden alle Dateien der
+
+Verzeichnisse angezeigt. Befinden Sie sich mit dem
+Balkencursor in diesem Fenster so k”nnen Sie die
+ausgew„hlten Dateien mit {F5 Komprimieren:23}.
+
+In dem Fenster der rechten Seite werden nur die Archive 
+mit den von Ihnen unter {F9 Parameter:27} angegebenen 
+Endungen angezeigt. Aus diesem Fenster k”nnen Sie mit
+{F5 Dekomprimieren:24}.
+
+Durch ein Doppelklicken oder Enter auf ein Archiv im 
+rechten Fenster besteht die M”glichkeit ein Archiv zu 
+”ffnen, sofern das TOP-Programm dieses Archivformat lesen
+kann. Es werden alle Dateien und Verzeichnisse im Archiv 
+angezeigt.
+
+;
+;
+;
+. 5 ^wVerzeichnisbaum^w
+
+šber den Verzeichnisbaum hat der Benutzer die M”glickeit
+in die Verzeichnisse der Festplatte zu wechseln.
+
+  ^wTastenkrzel^w  ^wAktion^w
+
+  ^wCursortasten^w  Erm”glichen das Bewegen auf dem 
+                Verzeichnisbaum.
+                Mit den Cursortasten Rechts und Links 
+                k”nnen Sie zwischen den Verzeichnissen auf
+                einer Ebene wechseln. 
+                (ebenfalls m”glich Pos1,Ende,Bild,Bild,)
+
+  ^wEnter^w         Wechselt in das Verzeichnis unter dem 
+                Cursor (ebenfalls m”glich Doppelkick 
+                mit linker Maustaste)
+
+  ^w-^w             Schlieát die Unterverzeichnisse des
+                aktuellen Verzeichnisses. (das Verzeichnis 
+                wird anschlieáend andersfarbig dargestellt)
+
+  ^w+^w             Zeigt die Unterverzeichnisse des 
+                aktuellen Verzeichnisses an.
+
+Die Anzahl der {markierte Dateien:8} wird neben dem 
+entsprechenden Verzeichnis angezeigt.
+
+                   ^w[ ]C:\^w
+                   ^w ÀÄ[-] TEXTE^w
+              ^w5        ÃÄ[ ] SCHULE^w
+              ^w3        ÀÄ[ ] PRIVAT^w
+
+Sind alle Dateien des Verzeichnisses angew„hlt, so wird
+die Zahl weiá dargestellt ansonsten grau.
+
+
+Im unteren  Fensterteil stehen zus„tzliche Informationen
+ber Dateien und Speicherkapazit„ten.
+
+
+ Anzahl der angew„hlten             Summe der Dateien
+ Dateien auf dem Laufwerk           auf Laufwerk in Byte
+  ³                                            ³
+  ³  ^wºÛ[-A-]Û[=C=]ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛº^w  ³
+  ÀÄ^wº Ausgew.:        5          360.720 B º^wÄÙ
+  ÚÄ^wº Gesamtkapazit„t:  834.534.143 B      º^w
+  ³  ^wº freier Speicher:  291.320.945 B      º^wÄ¿
+  ³  ^wÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼^w  ³
+  ³                                            ³
+ Gesamtkapazit„t           Freier verfgbarer Speicher
+ des Laufwerkes in Byte    des Laufwerkes in Byte
+
+
+^wge”ffnetes Archiv:^w
+
+Im Unterschied zum einfachen Verzeichnisbaum befindet
+sich am Anfang der Name der Archivdatei. šber diesen 
+Namen k”nnen Sie durch doppelklicken oder Enter das 
+Archiv verlassen.
+
+                   ^wbackup.zip^w
+                   ^w ÀÄ[-] TOOLS^w
+                   ^w    ÃÄ[ ] KOPIERER^w
+                   ^w    ÀÄ[ ] FORMAT^w
+
+ Anzahl der angew„hlten               Summe der Dateien
+ Dateien im Archiv                    im Archiv in Byte
+    ³                                            ³
+    ³  ^wºÛ[-A-]Û[=C=]ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛº^w  ³
+    ÀÄ^wº Ausgew.:        5          360.720 B º^wÄÙ
+ÚÄÄÄÄÄ^wº orig. G:     251.352 B Rat.:  35.59% º^wÄÄÄÄÄ¿
+³   ÚÄ^wº komp. G:      89.456 B Form:   PKZIP º^wÄ¿   ³
+³   ³  ^wÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼^w  ³   ³
+³   ³                                            ³   ³
+³ komprimierte Gr”áe aller     Format des Archives   ³
+³ Dateien des Archives in Byte                       ³
+³                                                    ³
+ originale/entpackte Gr”áe aller  Komprimierrate aller
+ Dateien des Archives in Byte     Dateien des Archives
+
+;
+;
+;
+. 6 ^wDateiliste^w
+
+In der Dateiliste k”nnen die Dateien des aktuellen
+Verzeichnisses in vier m”glichen Arten angezeigt.
+Das Umschalten ist mit {F4 Datinfo:22} m”glich.
+
+Die Reihenfolge der Dateien kann nach verschiedenen
+{Kriterien:20} sortiert werden.
+
+In die {Verzeichnisstruktur:5} gelangen Sie wieder durch
+einen Doppelklick mit der linken Maustaste auf den am 
+Anfang der Liste befindlichen Punkt oder durch Enter,
+wenn sich der Balkencursor auf diesem befindet.
+
+Im unteren Fensterteil stehen zus„tzliche Informationen ber
+das Verzeichnis.
+
+
+ Anzahl der angew„hlten             Summe der Dateien
+ Dateien im Verzeichnis             im Verzeichnis in Byte
+  ³                                            ³
+  ³  ^wºÛ[-A-]Û[=C=]ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛº^w  ³
+  ÀÄ^wº Ausgew.:        3          141.920 B º^wÄÙ
+  ÚÄ^wº Gesamtkapazit„t:  834.534.143 B      º^w
+  ³  ^wº freier Speicher:  291.320.945 B      º^wÄ¿
+  ³  ^wÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼^w  ³
+  ³                                            ³
+ Gesamtkapazit„t           Freier verfgbarer Speicher
+ des Laufwerkes in Byte    des Laufwerkes in Byte
+
+^wge”ffnetes Archiv:^w
+
+Der untere Fensterteil des Archivfensters stellt sich
+wie folgt dar.
+
+ Anzahl der angew„hlten           Summe der Dateien
+ Dateien im Verzeichnis           im Verzeichnis in Byte
+    ³                                            ³
+    ³  ^wºÛ[-A-]Û[=C=]ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛº^w  ³
+    ÀÄ^wº Ausgew.:        10          921.480B º^wÄÙ
+ÚÄÄÄÄÄ^wº orig. G:   4.135.891 B Rat.:  41.62% º^wÄÄÄÄÄ¿
+³   ÚÄ^wº komp. G:   1.721.358 B Form:   HYPER º^wÄ¿   ³
+³   ³  ^wÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼^w  ³   ³
+³   ³                                            ³   ³
+³ komprimierte Gr”áe aller      Format des Archives  ³
+³ Dateien des Archives in Byte                       ³
+³                                                    ³
+ originale/entpackte Gr”áe aller  Komprimierrate aller
+ Dateien des Archives in Byte     Dateien des Archives
+
+;
+;
+;
+. 7  ^wArchivbetrachter^w
+
+In ein Archiv gelangen Sie, wenn Sie eine Archivdatei im
+rechten Fenster doppelt anklicken oder sich mit dem 
+Balkencursor auf diese bewegen und Enter eingeben.
+
+Ein leistungsf„higer Archivbetrachter ”ffnet Archive
+der Komprimierer:
+^wARC, ARJ, BSA, DWC, HYPER, LHA, LIMIT, PAK, PKZIP/PKUNZIP,^w
+^wSTUFFIT, SQZ, TPZ, ZOO^w
+
+Weitere Einzelheiten ber die Darstellungsweise finden
+Sie unter:
+{Verzeichnisbaum:5}
+{Dateiliste:6}
+
+;
+;
+;
+. 8 ^wDateien ausw„hlen^w
+
+Fr ausgew„hlte Dateien k”nnen Sie verschiedene Befehle
+wie Komprimieren, Dekomprimieren und L”schen durchfhren.
+
+  ^wTastenkrzel^w  ^wAktion^w
+
+   ^w+ Enter^w      Dateigruppe anw„hlen
+
+   ^w- Enter^w      Dateigruppe abw„hlen
+
+         ^w*^w      Kehrt die Auswahl um.
+                Die aktuelle Auswahl der Dateien wird
+                aufgehoben und nicht ausgew„hlte Dateien
+                markiert.
+
+   ^wEinfg,^w       In der Dateienliste k”nnen ^weinzelne^w
+   ^wLeertaste^w    Dateien und im Verzeichnisbaum ^walle^w
+                Dateien an- oder abgew„hlt werden
+                (ebenfalls m”glich mit rechter Maustaste).
+
+
+Die Dateigruppen werden mit ^wPlatzhaltern^w beschrieben.
+
+  ^wPlatzhalter^w   ^wmarkiert^w
+
+         ^w*^w      beliebige Zeichen mit beliebiger Anzahl
+
+         ^w?^w      ein beliebiges Zeichen
+
+         ^w#^w      eine beliebige Ziffer
+
+
+Die Anweisung ?o*#.* w„hlt alle Dateien aus,
+in deren Dateinamen an zweiter Stelle ein 'o' und an
+letzter Stelle eine Ziffer ist, wie
+z.B mouse1.com, core2.bat.
+
+^wHinweis:^w Sollten Sie zwischen verschiedenen Laufwerken
+         wechseln, so bleibt die Markierung bestehen.
+         Austauschbare Datentr„ger wie Disketten- und 
+         CD-Laufwerke sind davon ausgenommen.
+
+;
+;
+;
+. 9 ^wLaufwerk^w
+
+Das Wechseln der Laufwerke ist durch einen Mausklick auf
+den Laufwerksbuchstaben der Laufwerksleiste im
+entsprechenden Fenster m”glich.
+Ebenfalls k”nnen Sie durch die Eingabe des
+Laufwerksbuchstaben auf der Tastatur das Laufwerk im
+aktiven Fenster wechseln.
+
+Wollen Sie ein Laufwerk neu einlesen so geben Sie
+^wStrg-R^w ein.
+
+;
+;
+;
+. 20 ^wOptionen  F2^w
+
+Dieses Fenster dient der Einstellung verschiedener Optionen.
+
+ ^wÄÄÄÄSortieren nachÄÄÄÄÄÄÄÄÄÄ^w
+ Hier k”nnen Sie die Reihenfolge bestimmen, in der die
+ Dateien in der Dateiliste angezeigt werden.
+
+ ^wName^w
+   Die Dateien werden alphabetisch nach Namen sortiert.
+   Dateien mit gleichem Namen werden nach Erweiterungen
+   sortiert.
+ ^wErweiterung^w
+   Die Dateien werden alphabetisch nach Erweiterungen
+   sortiert.
+   Dateien mit gleichen Erweiterungen werden nach Namen
+   sortiert.
+ ^wZeit^w
+   Die Dateien werden nach dem Erstellungsdatum sortiert,
+   wobei die „ltesten oben stehen.
+   Dateien mit gleichen Zeiten werden nach Namen und
+   Endungen sortiert.
+ ^wGr”áe^w
+   Die Dateien werden nach der Gr”áe sortiert, wobei die
+   kleinsten oben stehen.
+   Dateien mit gleicher Gr”áe werden nach Namen und
+   Endungen sortiert.
+ ^wAttribut^w
+   Die Dateien werden nach Dateiattributen sortiert.
+   Die Reihenfolge wird folgendermaáen bestimmt, zuerst
+   kommen die Attribute Nur-Lesen(^wR^w) ,Versteckt(^wH^w),
+   System(^wS^w) und zuletzt Archiv(^wA^w).
+   Dateien mit gleichen Attributen werden nach Namen und
+   Endungen sortiert.
+ ^wUnsortiert^w
+   Zeigt die Dateien in der gleichen Reihenfolge wie der
+   Dos-Befehl DIR an.
+
+ ^wÄÄÄÄDateiattributeÄÄÄÄÄÄÄÄÄÄ^w
+ Hier k”nnen Sie bestimmen welche Dateien mit ihren
+ entsprechenden Attributen angezeigt werden sollen.
+
+ ^wArchiv^w
+   Es werden Dateien mit gesetztem Archivattribut angezeigt.
+ ^wNur-Lesen^w
+   Es werden schreibgeschtzte Dateien angezeigt.
+ ^wSystem^w
+   Es werden Systemdateien angezeigt.
+ ^wVersteckt^w
+   Es werden versteckte Dateien angezeigt.
+
+ ^wÄÄÄÄFarbeÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ^w
+ Es besteht die M”glichkeit zwischen drei Farbeinstellungen
+ zu w„hlen.
+
+ ^wÄÄÄÄWeitere OptionenÄÄÄÄÄÄÄÄ^w
+ Dieses Dialogfeld dient der Einstellung weiterer
+ Konfigurationsoptionen.
+
+ ^wBack/Rest Erkennung^w
+   Diese Option erm”glicht es TOP noch effektiver zu nutzen.
+   Wird TOP in einem Verzeichnis aufgerufen, in dem sich
+   Dateien befinden, so steht der Balkencursor nach dem
+   Start im entsprechenden Verzeichnis des linken Fensters,
+   um dieses zu komprimieren.
+   Wird TOP in einem leeren Verzeichnis aufgerufen, so
+   steht der Balkencursor nach dem Start im rechten Fenster,
+   um ein Archiv zu dekomprimieren.
+ ^wSofort Ende^w
+   Nach dem Komprimieren oder Dekomprimieren wird das
+   Programm sofort beendet.
+ ^wInteraktiver Modus^w
+   In diesem Modus wird die Ausgabe des Komprimierprogrammes
+   angezeigt. Bei einem Backup ber mehrere Disketten
+   empfiehlt es sich diesen Modus zu aktivieren, um der
+   Aufforderung eines Diskettenwechsels nachkommen zu
+   k”nnen. Falls der interaktive Modus deaktiviert ist,
+   wird die Ausgabe in die Datei STDOUT.RED geschrieben.
+ ^wVerify^w
+   W„hrend des Packens und Entpackens wird berprft, ob
+   die Daten fehlerfrei auf den Datentr„ger
+   geschrieben werden.
+
+ ^wÄÄÄÄPacker-VerzeichnisÄÄÄÄÄÄ^w
+ Hier wird das Verzeichnis angegeben, in dem sich
+ die Packprogramme befinden. 
+ Ein ver„ndertes Packer-Verzeichnis wird erst nach einem 
+ erneuten Programmstart aktiviert.
+
+ ^wÄÄÄÄTempor„res-VerzeichnisÄÄ^w
+ Hier wird das Verzeichnis angegeben, in welches tempor„re
+ Auslagerungen durchgefhrt werden k”nnen. Sie sollten
+ hierfr mindestens 800 KByte bereitstellen.
+ Ein ver„ndertes Tempor„res-Verzeichnis wird erst nach
+ einem erneuten Programmstart aktiviert.
+
+^wHinweis :^w Sollte ein fehlerhaftes Packer-Verzeichnis
+          oder Tempor„res-Verzeichnis angegeben worden
+          sein, so wird nach einem erneuten Start des
+          Programmes dieses nach einer Fehlermeldung
+          durch das aktuelle Verzeichnis ersetzt.
+
+;
+;
+;
+. 21 ^wScript   F3^w
+
+Sie k”nnen in diesem Fenster eine Scriptdatei erstellen,
+welche Ihnen das regelm„áige Markieren von Dateigruppen
+erleichtert. Dieser Befehl erm”glicht es Dateien und
+Verzeichnisse zu bercksichtigen, welche zu einem sp„teren
+Zeitpunkt dazugekommen sind.
+
+Im oberen Fensterteil erhalten Sie die M”glichkeit eine
+neue Scriptdatei zu erstellen oder eine bereits vorhandene
+zu l”schen.
+
+Die Buttons { Neu :40}/Einf, L”schen/Entf, Kopieren und
+{Editiern:40} dienen zum Ver„ndern des Inhaltes der Scriptdatei.
+
+Die Liste in der Scriptdatei beschreibt die Dateien, welche
+nach dem Anw„hlen des OK markiert werden.
+Es werden nur Dateien auf der aktiven Fensterseite markiert.
+
+^wHinweis :^w Dieser Befehl ist nicht in einem ge”ffnetem 
+          Archiv ausfhrbar.
+
+;
+;
+;
+. 40 ^wNeu/Editieren^w
+
+Das Laufwerk, der Pfad und die Datei beschreiben
+die Datei(en) welche markiert werden sollen.
+Die Dateien k”nnen durch Platzhalter beschrieben werden.
+(siehe {Dateien markieren:8})
+
+Die Auswahl zwischen Inklusiv und Exklusiv gibt an ob auch
+Unterverzeichnisse in die Selektion einbezogen werden.
+
+;
+;
+;
+. 22 ^wDatinfo  F4^w
+
+Dieser Befehl stellt verschiedene Dateiinformationen dar.
+
+ ^wÄÄÄÄModus1ÄÄÄÄÄÄ^w
+(im einfachen Dateilisting und ge”ffnetem Archiv)
+Hier stehen nebeneinander der Dateiname, das Datum,
+die Uhrzeit und die Gr”áe der Dateien.
+
+   ^wmouse    com   18/08/93 6:30     55766^w
+
+
+ ^wÄÄÄÄModus2ÄÄÄÄÄÄ^w
+(im einfachen Dateilisting)
+Hier stehen nebeneinander der Dateiname,das Datum,
+die Uhrzeit und das Dateiattribut der Dateien.
+
+   ^wmouse    com   18/08/93 6:30 A---^w
+
+ ^wÄÄÄÄModus3ÄÄÄÄÄÄ^w
+(im ge”ffnetem Archiv)
+Hier stehen nebeneinander der Dateiname,
+die Komprimierrate, die komprimierte Gr”áe und
+die originale Gr”áe der Dateien.
+
+   ^wmouse    com   51%     28983     55766^w
+
+ ^wÄÄÄÄModus4ÄÄÄÄÄÄ^w
+(im ge”ffnetem Archiv)
+Hier stehen nebeneinander der Dateiname,
+die Komprimierart, die {CRC-Prfsumme:41} und
+das Dateiattribut der Dateien.
+
+   ^wmouse    com   DeflatX 62A7138D A---^w
+
+;
+;
+;
+. 23 ^wKomprimieren  F5^w
+
+Mit diesem Befehl k”nnen Dateien komprimiert werden. Dieser
+Befehl kann nur aufgerufen werden, wenn sich der Balken im
+linken Fenster befindet.
+
+In der oberen Zeile steht der Quellpfad aus dem komprimiert
+wird und der Zielpfad in welchem das Archiv erzeugt wird.
+
+ ^wC:\UTILITY\TOOLS                ÍÍÍÍÍ             A:\^w
+
+In diesem Fenster stehen verschiedene Einstellungen, welche
+unmittelbar den Komprimiervorgang beeinflussen.
+
+ ^wPacken von:^w
+    Hier werden die Dateien beschrieben, die gepackt werden
+    sollen. Es gibt hier mehrere Darstellungen. Sollten
+    bereits Dateien markiert sein, wird hier die Anzahl
+    angezeigt. Sind keine Dateien markiert, so wird nur
+    die aktuelle Datei angezeigt, auf welche der
+    Balkencursor steht.
+ ^win Archiv :^w
+    Hier wird der Name des Archives angegeben, in welches
+    gepackt werden soll. Falls dieses Archiv in dem
+    selektierten Verzeichnis des rechten Fensters bereits
+    existiert, werden die Dateien diesem Archiv
+    hinzugefgt. Sollte dieses Verzeichnis nicht das
+    angegebene Archiv enthalten, wird dieses neu erzeugt.
+ ^wPasswort :^w
+    Es besteht die M”glichkeit durch Eingabe eines
+    Passwortes die zu packenden Dateien im Archiv zu
+    sichern und nur durch die erneute Eingabe
+    des Passwortes wieder zu entpacken.
+ ^wDateien verschieben :^w
+    Die zu packenden Dateien werden nach erfolgreichem
+    Komprimiervorgang aus dem Verzeichnis gel”scht.
+ ^wmit Unterverzeichnissen :^w
+    Die zu packenden Dateien werden inklusive
+    Unterverzeichnissen in das Archiv komprimiert. Diese
+    Anweisung ist nur im Verzeichnisbaum anw„hlbar.
+ ^wmit Verzeichnisstruktur :^w
+    Die zu packenden Dateien werden mit ihrer vollst„ndigen
+    Pfadangabe gepackt. Beim Dekomprimiervorgang werden
+    diese wieder in das Originalverzeichnis entpackt.
+ ^wSelbstentpacker :^w
+    Durch diese Option kann das Archiv durch Aufruf auf der
+    DOS-Shell ohne Dekomprimierer entpackt werden.
+    Es erh„lt die Endung EXE.
+ ^wMultiple Volume :^w
+    Dies erm”glicht es ein Backup ber mehrere Disketten
+    zu machen.
+ ^wPacker :^w
+    In diesem Dialogfenster kann der Komprimierer
+    ausgew„hlt werden, welcher die Komprimierung
+    durchfhren soll.
+ ^wModus :^w
+    Der Modus gibt die Intensit„t des Komprimierens an.
+
+^wHinweis :^w Die aufgelisteten Anweisungen werden nur
+          angezeigt, wenn fr den Komprimierer unter
+          der Menoption Parameter ein entsprechender
+          Befehl eingegeben wurde.
+
+;
+;
+;
+;
+. 24 ^wDekomprimieren  F5^w
+
+Mit diesem Befehl k”nnen Dateien dekomprimiert werden.
+Dieser Befehl kann nur aufgerufen werden, wenn sich
+der Balken im rechten Fenster befindet.
+
+In der oberen Zeile steht der Quellpfad, aus dem das Archiv
+dekomprimiert wird und der Zielpfad, in welchen die Dateien
+geschrieben werden.
+
+ ^wC:\UTILITY\TOOLS                ÍÍÍÍÍ             A:\^w
+
+In diesem Fenster stehen verschiedene Einstellungen, welche
+unmittelbar den Dekomprimiervorgang beeinflussen.
+
+ ^wEntpacken von:^w
+    Hier werden die Dateien beschrieben, die entpackt
+    werden sollen. Dies erfolgt durch Platzhalter.
+ ^waus Archiv  :^w
+   Sollten mehrere Archive markiert sein, wird hier
+   die Anzahl angezeigt, ansonsten nur das Archiv unter
+   dem Balkencursor.
+ ^wPasswort :^w
+   Falls Dateien mit einem Passwort komprimiert wurden muá
+   dieses wieder zum Dekomprimieren angegeben werden.
+ ^wmit Verzeichnissen^w
+   Dateien werden mit ihren ursprnglichen
+   Verzeichnissen entpackt.
+ ^mMultiple Volume^w
+   Dieser Befehl dient dem Entpacken eines Archives, welches
+   auf mehrere Disketten verteilt ist.
+
+^wHinweis:^w Das Programm weiát dem Archiv an Hand seiner
+         Endung den entsprechenden Dekomprimierer zu.
+
+;
+;
+;
+. 25 ^wUnterverzeichnis erstellen  F7^w
+
+Dieser Befehl erm”glicht es Ihnen Verzeichnisse anzulegen.
+Das erstellte Verzeichnis wird ein Unterverzeichnis des
+aktuellen Verzeichnisses.
+Das Erstellen von Verzeichnissen innerhalb von Archiven
+ist nicht m”glich.
+
+;
+;
+;
+. 26 ^wL”schen  F8^w
+
+Dieser Befehl erm”glicht es, Dateien und Verzeichnisse
+zu l”schen.
+
+Einzelne Dateien werden gel”scht, wenn sie sich unter dem
+Balkencursor befinden.
+Es k”nnen Dateigruppen gel”scht werden, die vorher
+{markiert:7} wurden.
+Das L”schen von Dateien ist auch innerhalb der Archive
+m”glich, sofern der Packer dies untersttzt und Sie diesen
+Befehl unter {F9 Parameter:27} eingegeben haben.
+
+Sind keine Dateien markiert so ist es m”glich Verzeichnisse
+mit ihren Unterverzeichnissen und Dateien zu l”schen.
+
+^wHinweis:^w Dateien mit dem Dateiattribut Nur-Lesen k”nnen
+         nicht gel”scht werden.
+
+;
+;
+;
+. 27 ^wPacker konfigurieren  F9^w
+
+In diesem Dialogfenster werden die DOS Parameter der
+Pack- und Entpackprogramme angegeben. Diese Parameter
+werden beim Aufruf der Packer und Entpacker von TOP
+miteinander kombiniert. Da nicht alle Programme die
+Vielzahl der aufgefhrten Optionen untersttzen, k”nnen
+einige der entsprechenden Felder freigelassen werden.
+Diese sind im folgenden mit 'optional' gekennzeichnet.
+Andere Felder mssen bei Fehlen der Option durch „hnliche
+Anweisungen ausgefllt werden.
+
+ ^wArchivendung^w
+    Die Archivendung wird vom Komprimierer automatisch an
+    den Dateinamen des Archives angehangen. Es ist m”glich
+    mehrere Endungen anzugeben welche duch Kommatas
+    voneinander abgetrennt werden. Sie k”nnen bis zu drei 
+    verschiedene Archivendungen fr einen Packer angeben. 
+    Diese k”nnen auch durch Platzhalter beschrieben werden. 
+    Nur Dateien mit den entsprechenden Endungen werden im
+    rechten Fenster angezeigt.
+ ^wPacker^w
+    Hier geben Sie den Dateinamen
+    des Komprimierprogrammes an.
+ ^wEntpacker (optional)^w
+    Hier geben Sie den Dateinamen des
+    Dekomprimierprogrammes an.
+ ^wPacken^w
+    Diese Option gibt dem Packer die Anweisung die
+    nachfolgenden Dateien in ein Archiv zu komprimieren.
+    ^wohne Verzeichnis:^w
+       W„hrend des Packvorganges wird nur
+       der Dateiname in das Archiv
+       aufgenommen.
+    ^wmit Verzeichnis (optional):^w
+       W„hrend des Packvorganges wird der
+       vollst„ndige Verzeichnispfad der
+       Datei zus„tzlich im Archiv abgelegt.
+ ^wVerschieben^w
+    Diese Option weist den Packer an, Dateien zu
+    komprimieren und auáerdem anschlieáend zu l”schen.
+    ^wohne Verzeichnis (optional):^w
+       siehe Packen.
+    ^wmit Verzeichnis (optional):^w
+       siehe Packen.
+ ^wEntpacken^w
+    Gepackte Archive werden mit dieser Option wieder
+    entpackt.
+    ^wohne Verzeichnis:^w
+       Die Dateien werden in das aktuelle
+       oder angegebene Verzeichnis entpackt.
+    ^wmit Verzeichnis (optional):^w
+       Die Dateien werden beim Entpacken in
+       das gespeicherte Verzeichnis entpackt.
+ ^wKomprimierung^w
+    Gibt die Intensit„t an, mit der die Dateien komprimiert
+    werden.
+ ^wSelbstentpacker (optional)^w
+    Erzeugt ein selbstentpackendes Archiv mit
+    der Dateiendung EXE.
+ ^wPacken mit UV (optional)^w
+    Komprimiert zus„tzlich zum aktuellen Verzeichnis
+    die Dateien der Unterverzeichnisse und die
+    dazugeh”rigen Verzeichnispfade.
+ ^wPasswort (optional)^w
+    Erm”glicht es, beim Komprimieren die Dateien im Archiv
+    durch ein Passwort zu sichern.
+    W„hrend des Dekomprimierens muá das Archiv mit
+    dieser Option und dem dazugeh”rigen Passwort
+    angegeben werden.
+ ^wMultiple Volume (optional)^w
+    Dieser Befehl untersttzt das Packen und Entpacken ber
+    mehrere Datentr„ger.
+ ^wL”schen aus Archiv (optional)^w
+    Diese Option dient dem L”schen von Dateien aus dem
+    Archiv.
+
+^wHinweis^w : Sie k”nnen bis zu 99 Pack- und Entpackprogramme
+          in die TOP-Oberfl„che einbinden. Die Parameter
+          werden in der Datei PACKER.CFG gespeichert.
+
+;
+;
+;
+. 28 ^wEnde  Alt-X^w
+
+Dieser Befehl beendet das Programm.
+
+Es besteht auch die M”glichkeit nach dem Komprimieren oder
+Dekomprimieren das Programm sofort beenden zu lassen.
+(siehe {F2 Optionen:20})
+
+^wHinweis:^w nderungen im {Optionsfenster:20} werden beim Beenden
+         des Programmes gespeichert.
+
+;
+;
+;
+;
+. 30 ^wPacker Fehlermeldungen^w
+
+W„hrend des Komprimierens oder Dekomprimierens k”nnen
+verschiedene Fehler auftreten, die von mehreren
+Packprogrammen indirekt dokumentiert werden.
+
+Die Packprogramme geben nach Beendigung ihres Ablaufs einen
+{Dosexitcode:42} an das System, der von TOP an den Benutzer
+weitergeleitet wird. Um diesem Dosexitcode eine Nachricht
+zuordnen zu k”nnen, muá fr jeden Packer und Entpacker eine
+individuelle Datei angelegt werden.
+
+Diese Datei muá sich im Verzeichnis des TOP Programmes
+befinden. Ihr Name muá sich aus dem Namen
+des Pack- oder Entpackprogrammes und der Endung ERR
+zusammensetzen. Fr das Programm pkzip.exe ist die
+dazugeh”rige Fehlerdatei pkzip.err.
+Der interne Dateiaufbau kann mit einem einfachen Dos-Editor
+erstellt werden. Jeder Dosexitcode wird mit
+der entsprechenden Fehlermeldung in eine eigene Zeile
+geschrieben und durch einen Doppelpunkt getrennt.
+Fr einen Dosexitcode wrde eine Zeile wie folgt aussehen.
+
+  ^w5 : Diskette/Platte ist voll!^w
+
+Die L„nge einer Fehlermeldung kann maximal 51 Zeichen
+betragen.
+ 
+;
+;
+;
+. 31 ^wTOP Umgebung^w
+
+Vor dem Pack- und Entpackvorgang wird fr das externe
+Pack- bzw. Entpackprogramm das TOP-Programm aus dem Speicher
+ausgelagert. Fr diese Auslagerungsdatei sollten Sie
+ausreichend ^wEMS Speicher^w bereitstellen. Im Falle,
+daá Sie keinen eingerichtet oder nicht gengend zur
+Verfgung haben, wird eine tempor„re Auslagerungsdatei
+in das unter {F2 Optionen:20} angegebene tempor„re
+Verzeichnis geschrieben. Die Auslagerung auf die Festplatte
+ist mit einer Zeitverz”gerung verbunden.
+Es besteht auch die M”glichkeit fr das Nutzen des
+XMS Speicher. Dazu mssen Sie eine RAM-DISK einrichten und
+das tempor„re Verzeichnis auf diese einstellen.
+
+;
+;
+;
+. 41 ^wCRC (Cyclic Redundancy Check)^w
+
+Die CRC-Prfsumme dient der šberprfung der inneren
+Konsistenz von Daten. Sie wird beim Komprimieren erstmalig
+erzeugt. W„hrend des Dekomprimeren wird die CRC-Prfsumme
+vom Entpacker erneut berechnet und mit der gespeicherten
+verglichen. Sollte ein Unterschied auftreten, so ist ein
+Fehler aufgetreten und die Datei kann nicht fehlerfrei
+entpackt werden.
+
+;
+;
+;
+. 42 ^wDosexitcode^w
+
+Nach dem Beenden eines Programmes wird ein Rckgabecode
+an das DOS bergeben. Dieser kann innerhalb einer
+Batch-Datei ber die Batch-Variable ^wERRORLEVEL^w
+abgefragt werden.
+
+;

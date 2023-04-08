@@ -1,0 +1,42 @@
+   1 : Anwender brach mit Strg-C oder Strg-Pause ab!
+   2 : Mehrfache Fehler!
+   3 : Mehrfache Warnungen!
+  10 : Falscher Parameter in der Befehlszeile!
+  11 : Kein Befehl angegeben!
+  12 : Zu viele Befehle angegeben!
+  13 : Passwort erwartet die Option 'g'!
+  14 : Fehlende Archivzeile in der Befehlszeile!
+  20 : Zu wenig Speicher!
+  21 : Zu l”schende Dateien wurden nicht angegeben!
+  22 : Keine Header-Datei angegeben!
+  23 : Kann den NULL Ausgabekanal nicht ”ffnen!
+  24 : Kann Archivdatei nicht zum Schreiben ”ffnen!
+  25 : Zu wenig Speicher auf Laufwerk!
+  40 : Archivdatei nicht gefunden!
+  41 : Kann tempor„re Datei nicht anlegen!
+  42 : Unerwartetes Ende beim Lesen der Datei!
+  43 : Datei ist besch„digt, CRC-Fehler!
+  43 : Datei ist besch„digt, Stackberlauf!
+  43 : Datei ist besch„digt, Gr”áe falsch!
+  44 : Datei ist kein DWC-Archiv oder ist besch„digt!
+  45 : Verzeichnis der Archivdatei ist besch„digt!
+  46 : Kann keine tempor„re DWC-Datei anlegen!
+  47 : Archiv ist zu sehr besch„digt!
+  48 : Kann Datei nicht anlegen!
+  49 : Platte/Diskette ist voll!
+  50 : Platte/Diskette ist voll!
+  51 : Laufwerk existiert nicht!
+  52 : Kann Archive nicht anlegen!
+  60 : Datei ist bereits vorhanden!
+  61 : Datei nicht gefunden!
+  62 : Kann tempor„re Datei nicht ”ffnen!
+  63 : Kann Datei nicht ”ffnen!
+  64 : Datei wurde mit einem Passwort archiviert!
+  65 : Entpacken einer Datei auf sich selbst nicht erlaubt!
+  66 : Unbekannte Komprimierung (falsche Version)!
+  67 : Header-Datei nicht im Archiv gefunden!
+  68 : Mehr als eine Archivdatei in der Dateiliste!
+  69 : Angegebene Datei nicht im Archiv gefunden!
+  70 : Zu wenig Verzeichnisse im Archiv gefunden!
+  71 : Verzeichniseintrag besch„digt!
+  72 : Unerwartetes Ende!

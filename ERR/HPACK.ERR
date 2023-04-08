@@ -1,0 +1,26 @@
+  1   :  Interner Fehler!
+  2   :  Zu wenig Hauptspeicher!
+  3   :  Zu wenig Platz auf der Diskette od. Festplatte!
+  4   :  Kann Archivdatei nicht îffnen!
+  5   :  Kann Scrptdatei nicht îffnen!
+  6   :  Kann Verzeichnis nicht finden!
+  7   :  Kann nicht in das Haupverzeichnis wechseln!
+  8   :  Kann Verzeichnis nicht anlegen!
+  9   :  Anwender brach mit Strg-Pause oder Strg-C ab!
+  10  :  Unbekannter Dateifehler!
+  11  :  Archiv-Verzeichnis ist beschÑdigt!
+  100 :  Verzeichnis ist zu lang!
+  101 :  Falsche Verzeichnisbezeichnung!
+  102 :  Verzeichnisse sind zu tief verschachtelt!
+  103 :  Fehler in Scriptdatei!
+  104 :  Dies ist kein HPACK-Archive!
+  105 :  Falsche SchlÅsseldatei!
+  106 :  Keine Optionen angegeben!
+  107 :  Unbekannter Befehl!
+  108 :  Unbekannte Option!
+  200 :  Falsches Password!
+  201 :  Kann Archiv nicht verÑndern!
+  202 :  Langes Argument-Format wird nicht unterstÅtzt!
+  203 :  Falsche Platzhalter!
+  204 :  Passwortfehler!
+  205 :  Kann verschlÅsseltes Archive nicht entpacken!

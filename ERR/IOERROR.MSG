@@ -1,0 +1,41 @@
+   1 :  DOS-Fkt.-Nr. ist ungltig !
+   2 :  Datei nicht gefunden !
+   3 :  Pfad nicht gefunden !
+   4 :  Zu viele Dateien ge”ffnet !
+   5 :  Datei-oder Verzeichniszugriff verweigert !
+   6 :  Ungltiges Datei-Handle !
+   8 :  Nicht genug Speicher !
+  12 :  Ungltiger Datei-Zugriffscode !
+  15 :  Fehlerhafte Laufwerksbezeichnung !
+  16 :  Verzeichnis kann nicht gel”scht werden !
+  17 :  Umbenennen ber Laufwerke hinweg nicht erlaubt !
+  18 :  Packer bzw. Entpacker nicht gefunden !
+ 100 :  Fehler beim Lesen von Diskette oder Platte !
+ 101 :  Fehler beim Schreiben auf Diskette oder Platte !
+ 102 :  Datei wurde nicht zugewiesen !
+ 103 :  Datei ist nicht offen !
+ 104 :  Datei fr Eingabe nicht ge”ffnet !
+ 105 :  Datei fr Ausgabe nicht ge”ffnet !
+ 106 :  Fehlerhaftes Zahlenformat !
+ 150 :  Diskette ist schreibgeschtzt !
+ 151 :  Peripherieger„t nicht bekannt/nicht angeschlossen !
+ 152 :  Fehler beim Verzeichniswechsel !
+ 154 :  CRC-Fehler in Daten !
+ 156 :  Positionierfehler auf Laufwerk !
+ 157 :  Unbekannter Datentr„ger !
+ 158 :  Sektor nicht gefunden !
+ 159 :  Drucker hat kein Papier !
+ 160 :  Fehler beim Schreiben auf Peripherieger„t !
+ 161 :  Fehler beim Lesen von einem Peripherieger„t !
+ 162 :  Hardware-Fehler !
+ 163 :  Zu wenig Speicherplatz auf der Diskette !
+ 203 :  Heap šberlauf !
+ 221 :  Programm konnte nicht ausgelagert werden !
+ 222 :  Es wurde keine Datei angew„hlt !
+ 223 :  Es wurde kein Packer konfiguriert !
+ 224 :  Fehler in der Hilfedatei !
+ 225 :  Unbekanntes Archivformat !
+ 226 :  Kein L”schparameter fr Packer angegeben !
+ 227 :  Verzeichnis kann nicht im Archiv erstellt werden !
+ 228 :  Script im Archiv ausfhren nicht m”glich !
+ 229 :  Diese Funktion ist in der DEMO nicht verfgbar !

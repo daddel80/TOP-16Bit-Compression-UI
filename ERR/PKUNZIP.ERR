@@ -1,0 +1,14 @@
+  1   :  Fehlerwarnung (wie z.B felerhafte CRC-Kontrolle)!
+  2   :  Fehler in .ZIP Datei!
+  3   :  Fehler in .ZIP Datei!
+  4   :  Zu wenig Hauptspeicher!
+  5   :  Zu wenig Hauptspeicher!
+  6   :  Zu wenig Hauptspeicher!
+  7   :  Zu wenig Hauptspeicher!
+  8   :  Zu wenig Hauptspeicher!
+  9   :  Datei nicht gefunden. Keine .ZIP Dateien gefunden!
+ 10   :  Falsche Parameter!
+ 11   :  Keine Dateien zum Entpacken/Anzeigen etc. gefunden!
+ 50   :  Platte ist voll!
+ 51   :  Falsche Endkennung der .ZIP Datei!
+ 255  :  Anwender brach mit Strg-C oder Strg-Pause ab!

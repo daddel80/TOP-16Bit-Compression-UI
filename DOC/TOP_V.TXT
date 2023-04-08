@@ -1,0 +1,304 @@
+TOP - Toms Oberfl„che fr Packprogramme - Version 2.1
+Copyright(c) 1992-94, Thomas Kn”fel
+
+
+ 1. EINFšHRUNG
+ 2. LIZENSBEDINGUNGEN
+ 3. LEISTUNGSMERKMALE
+ 4. TECHNISCHE VORRAUSSETZUNG
+ 5. LIEFERUMFANG
+ 6. INSTALLATION
+ 7. SCHNELLEINSTIEG
+ 8. FRAGEN UND PROBLEME
+ 9. SUPPORT
+10. DANKSAGUNG
+
+
+
+1. EINFšHRUNG
+
+ Sehr geehrte Damen und Herren,
+
+endlich haben Sie ein Programm mit dem Sie unkompliziert Backups durchfhren 
+k”nnen. Der Wust an Packprogrammen scheint unermeálich zu sein, von denen
+die meisten keine Benutzeroberfl„che besitzen. Die einzige Alternative war
+bisher das Schreiben von unkomfortablen Batchdateien. Mit diesem komfortablen
+Archivmanager sind Sie in der Lage Ihre Packprogramme unter einer einheitlichen
+Benutzeroberfl„che zu nutzen.
+
+Bei der Programmierung und Entwicklung dieses Programmes habe ich versucht, 
+den umfangreichen Befehlsumfang der Packprogramme m”glichst detailiert zu 
+bercksichtigen.
+
+Anregungen und Hinweise die zur Verbesserung des Programmes fhren nehme ich 
+gerne entgegen. Wenden Sie sich bitte an meinen Distributor. (Adresse siehe
+unten)
+
+
+
+
+2. LIZENSBEDINGUNG
+
+DIESE VOLLVERSION DARF NICHT AN DRITTE WEITERGEGEBEN WERDEN!
+Der Lizensnehmer darf zum Zwecke der Datensicherheit beliebig viele
+Kopien der Software herstellen, solange gew„hrleistet ist, daá das
+Programm zu jedem Zeitpunkt garantiert nur auf einem Einzelplatz-Rechner
+lauff„hig ist. Fr Softwareverlust oder Hardwaresch„den die sich aus der
+Benutzung der Top-Software ergeben wird keine Garantie bernommen.
+
+
+
+
+3. LEISTUNGSMERKALE
+     - Eine bersichtliche Maus- und Funktionstastenbedienbare Benut-
+       zeroberfl„che.
+     - Es werden keine Kenntnisse ber die Packer selbst ben”tigt, da
+       automatisch erkannt wird welcher Packer mit welchen Optionen zum
+       Packen, Entpacken oder Ansehen eines Archives ben”tigt wird.
+     - Das Bestimmen der Kompressionsrate ist m”glich.
+     - Funktion zum Packen und Entpacken ber mehrere Disketten vorhanden.
+     - Es k”nnen bis zu 99 eigene Packer eingebunden werden, wobei 12 bereits
+       vorkonfiguriert sind.
+     - Direktes Konfigurieren der Packer aus der Benutzeroberfl„che
+       ist m”glich.
+     - Fehlermeldungen der Packer k”nnen selbst bestimmt werden.
+     - Erstellen von Scripten, um regelm„áige Pack- und Entpackvorg„nge zu
+       automatisieren ist m”glich.
+     - Verzeichnisse anlegen sowie l”schen von Dateien und Verzeichnissen
+     - Markieren von Dateien ber mehrere Verzeichnisse und Laufwerke
+       gleichzeitig m”glich.
+     - Integrierter Archivbetrachter fr ber 13 Archivformate.
+     - Archive k”nnen wie ein normales Verzeichnis eingelesen werden und
+       einzelne Dateien und Verzeichnisse daraus gel”scht, kopiert oder
+       entpackt werden.
+     - Einfaches Bestimmen des Zielpfades zum Packen oder Entpacken.
+     - Fr anfallende tempor„re Dateien kann ein Laufwerk bzw. Verzeichnis
+       (z.B. eine schnelle RAM-Disk) vorgegeben werden.
+     - Es k”nnen unsichtbare-, schreibgeschtzte- und Systemdateien
+       archiviert werden.
+     - Eine komfortable Online-Hilfe.
+
+
+
+
+4. TECHNISCHE VORRAUSSETZUNG
+
+Zur fehlerfreien Benutzung des TOP-Programmes ben”tigen Sie:
+
+-Hardware
+ einen 286 AT, eine Festplatte, eine EGA oder VGA Grafikkarte,
+ mindestens 640Kb besser 1,5Mb Arbeitsspeicher
+
+-Software
+ eine MS-DOS Version ab 3.3, nach M”glichkeit 550K EMS-Speicher
+
+
+
+
+5. LIEFERUMFANG
+
+Zum Lieferumfang geh”ren:
+  INSTALL  EXE - Installationsprogramm
+  TOP      EXE - Hauptrogramm
+  TOP      HLP - Hilfedatei
+  IOERROR  MSG - Fehlerdatei
+  PACKER   CFG - Konfigurationsdatei der Packerparameter
+  ARJ      ERR - Fehlerdatei fr arj.exe
+  DWC      ERR - Fehlerdatei fr dwc.exe
+  PKZIP    ERR - Fehlerdatei fr pkzip.exe
+  PKUNZIP  ERR - Fehlerdatei fr pkunzip.exe
+  HAPCK    ERR - Fehlerdatei fr hpack.exe
+  HYPER    ERR - Fehlerdatei fr hyper.exe
+  LHA      ERR - Fehlerdatei fr lha.exe
+  PAK      ERR - Fehlerdatei fr pak.exe
+  SQZ      ERR - Fehlerdatei fr sqz.exe
+  ZOO      ERR - Fehlerdatei fr zoo.exe
+  TOP_V    TXT - Zusatzinformationen
+
+Packprogramme sind nicht im Lieferumfang enthalten. Alle in TOP angegebenen
+Packer sind Sharewareprogramme und k”nnen kostenfrei getauscht werden, soweit
+sie nicht kommerziell genutzt werden.
+
+
+
+
+
+6. INSTALLATION
+
+Schlieáen Sie zuerst den Schreibschutz der Installationsdiskette!
+
+Sollte das Programm noch nicht vorinstalliert sein oder bereits von Ihnen
+installiert worden sein, werden Sie zu Beginn aufgefordert Ihren Namen
+Ihre Adresse sowie die auf dem Diskettenlabel stehende Lizensnummer einzugeben.
+
+Anschlieáend mssen das Zielverzeichnis und das Packerverzeichnis
+bestimmt werden. Das Zielverzeichnis bestimmt das Verzeichnis, in welches
+das Hauptprogramm installiert wird. Im Packer-Verzeichnis sind alle
+Packprogramme die von TOP aufgerufen werden.
+
+Als n„chster Schritt werden die TOP-Dateien in das Zielverzeichnis kopiert.
+Sie k”nnen nach erfolgreicher Beendigung durch Eingabe von TOP das Programm
+starten.
+
+
+
+
+
+7. SCHNELLEINSTIEG
+
+Das Programm ist in zwei Fensterh„lften aufgebaut. Im linken Fenster werden
+alle Dateien die sich auf Ihrem Laufwerk befinden angezeigt und im rechten
+Fenster nur alle komprimierten Archivdateien. Zu Beginn sehen Sie nur die
+Verzeichnisb„ume der entsprechenden Laufwerke.
+Die Dateien in den Verzeichnissen k”nnen Sie sich anzeigen lassen indem
+Sie ENTER eingeben, und wieder schlieáen indem Sie an den Anfang der Dateiliste
+gehen und ENTER eingeben.
+
+F5 Komprimieren
+  Wollen Sie ein Verzeichnis komprimieren so bewegen Sie den Balkencursor in
+  der linken Fnsterh„lfte auf dieses und drcken die Funktionstaste F5.
+  Es ”ffnet sich ein Fenster in welchem Sie verschiedene Einstellungen
+  vornehmen k”nnen wie zum Beispiel den Packer fr Ihre Komprimierung
+  ausw„hlen und den Namen des zu erzeugenden Archives bestimmen. W„hlen Sie
+  die Einstellung 'inklusive Unterverzeichnisse' ab. Um die Komprimierung
+  auszufhren geben Sie ENTER ein. Falls der Interaktive Modus eingeschaltet
+  ist blendet sich die Oberfl„che aus und Sie k”nnen die Arbeit des Packers
+  verfolgen. Anschlieáend ist die TOP Oberfl„che wieder sichtbar. Bewegen
+  Sie sich mit der TAB-Taste in das rechte Fenster und geben Sie ENTER ein um
+  das Verzeichnis zu ”ffnen. Dort befindet sich das von Ihnen erzeugte Archiv.
+
+F5 Dekomprimieren
+  Um das eben erzeugte Archiv wieder zu dekomprimieren wechseln Sie mit TAB
+  in die linke Fensterh„lfte und bewegen Sie den Cursor auf das Verzeichnis in
+  welches die entpackten Dateien geschrieben werden sollen. Stellen Sie sich nun
+  wieder auf das Archiv in der rechten Fensterh„lfte und geben Sie F5 ein.
+  Es ”ffnet sich ein Fenster zum Dekomprimieren. Nachdem Sie Enter eingegeben
+  haben wird der Dekomprimiervorgang gestartet und alle entpackten Dateien
+  befinden sich im Verzeichnis auf der linken Seite.
+
+F1 Hilfe
+  Mit F1 k”nnen Sie sich zu jedem ge”ffneten Fenster eine umfangreiche
+  Erl„uterung geben lassen.
+
+F2 Optionen
+  In der Option F2 k”nnen Sie bestimmen welche Dateien angezeigt und nach
+  welchem Kriterium diese sortiert werden sollen. Desweiteren ist es Ihnen
+  m”glich zwischen verschiedenen Farbeinstellungen zu w„hlen.
+  Unter 'Weitere Optionen' finden Sie die Einstellungen:
+  Backup/Restore Erkennung
+    - Dieser Mechanismus wird unmittelbar nach dem Programmstart ausgefhrt.
+      Starten Sie TOP aus einem leeren Verzeichnis so steht der Balkencursor
+      zu Beginn im rechten Fenster.
+      Starten Sie TOP im vollen Verzeichnis so steht der Balkencursor in der
+      linken Fensterseite.
+  Interaktiver Modus
+    - Sie k”nnen die Arbeit des Packers direkt verfolgen.
+  Sofort Ende
+    - Beendet das Programm unmittelbar nach dem Packen oder Entpacken
+  Verify
+    - šberprft ob die Dateien korrekt auf den Datentr„ger geschrieben wurden.
+  Das Packer Verzeichnis bestimmt das Verzeichnis in welchem sich die Packer fr
+  die TOP-Oberfl„che befinden. In das Tempor„re Verzeichnis werden vom Programm
+  Dateien zwischengelagert, die fr den Benutzer nicht von Bedeutung sind.
+
+F3 Script
+  Die Funktion F3 dient zum Erstellen von Scriptdateien mit deren Hilfe man
+  regelm„áig einfach Backups durchfhren kann. In der Scriptdatei werden die
+  Dateien und Verzeichnisse beschrieben die Sie regelm„áig packen oder entpacken
+  m”chten. Nachdem Sie die Datei mit OK aktiviert haben werden alle beschriebenen
+  Dateien angew„hlt. Mit F5 k”nnen Sie diese nun packen oder entpacken.
+
+F4 DatInfo
+  Die Option F4 gibt Ihnen zu den Dateien im Dateilisting oder im Archiv
+  verschiedene Informationen an. Diese Funktion ist nur in einer ge”ffneten
+  Dateiliste anw„hlbar.
+
+F7 Verzeichnis
+  Mit F7 k”nnen Sie neue Verzeichnisse erstellen.
+
+F8 L”schen
+  F8 gibt Ihnen die M”glichkeit Dateien, Verzeichnisse und Unterverzeichnisse zu
+  l”schen.
+
+F9 Parameter
+  In der Option F9 werden alle Parameter der Packprogramme gespeichert. Diese
+  Einstellungen sollten nur ver„ndert werden wenn Sie bereits mit dem Umgang von
+  Packprogrammen vertraut sind.
+
+ALT-X Ende
+  Die Tastenkombination ALT-X beendet das Programm.
+
+
+
+
+8. FRAGEN UND PROBLEME
+
+Warum ”ffnet sich zu Beginn immer das Hilfefenster?
+-Fhren Sie erneut eine Installation nach den unter INSTALLATION angegebenen
+ Anweisungen aus.
+
+Warum beendet das Programm zu Beginn mit der Meldung
+'Zu wenig Speicher fr das Programm!'?
+-šberprfen Sie Ihre Speicherkonfiguration und stellen Sie dem Programm
+ mindestens 550K Hauptspeicher zur Verfgung.
+
+Warum bleibt das Programm 'h„ngen' sobald das Verzeichnis eingelesen wird?
+-šberprfen Sie Ihre Treiberkonfiguration und entfernen Sie testweise einzelne
+ Treiber bis die Ursache gefunden wurde.
+
+Warum wird keine Archivdatei erzeugt oder entpackt?
+- šberprfen Sie die Parameter unter F9 und Schalten Sie unter F2-Optionen
+  das Programm in den interaktiven Modus. Sollte dies nicht zum Erfolg fhren
+  testen Sie das Packprogramm auf der DOS-Oberfl„che.
+
+Warum wird kein Pack- oder Entpackvorgang gestartet obwohl
+das Packerverzeichnis und die Parameter richtig konfiguriert wurden?
+-Sie mssen mehr Speicher zu Verfgung stellen, da das Packprogramm sofort zu
+ Startbeginn terminiert. Das TOP-Programm belegt nach Aufruf eines externen
+ Packprogrammes nur 1K im Speicher.
+
+Warum werden mir Fehlermeldungen in Zahlen angegeben?
+-šberprfen Sie ob die Datei ioerror.msg im Top-Verzeichnis vorhanden ist.
+ Sollte dies w„hrend des Aufrufes eines Pack- oder Entpackvorganges erfolgen,
+ so berprfen Sie das Vorhandensein der Fehlerdatei mit dem Namen des
+ Packers oder Entpackers im TOP-Verzeichnis und berprfen Sie den Inhalt mit 
+ einem DOS-Editor auf das Vorhandensein der Fehlerbeschreibung. Sie k”nnen
+ diese bei nicht vorhanden sein selbst erg„nzen.
+
+Warum wird trotz erfolgreichem Packvorgang keine Archivdatei im rechten Fenster
+angezeigt?
+-šberprfen sie die Archivendung unter F9 Parameter.
+
+Warum wird der freie Platz auf der Festplatte nicht auf beiden Fensterseiten
+gleich angezeigt?
+-Eine geringe Abweichung ist m”glich, wenn Sie Ihr tempor„res Verzeichnis auf
+ dieser Festplatte eingerichtet haben, da TOP w„hrend seiner Arbeit stetig
+ tempor„re Daten auslagert. Um Abhilfe zu schaffen verlegen Sie das
+ tempor„re Verzeichnis auf ein anderes Laufwerk oder lesen Sie das Laufwerk
+ mit Strg-R neu ein!
+
+
+
+
+9. SUPPORT
+
+Bei ungel”sten Fragen und Problemen richten Sie sich bitte an:
+
+  Multimedia-Service
+  Burkhard Pabst
+  Max-Josef-Metzger-Str. 25
+  14772 Brandenburg
+
+
+
+
+10. DANKSAGUNG
+
+Mein besonderer Dank gilt Heiko Becker der wertvolle Hinweise und Programmteile
+beisteuerte. Desweiteren m”chte ich mich bei meinen Crashtestern Andreas Drewke
+und Sven Ertelt fr ihre intensive 'BUG'suche bedanken und bei all denjenigen
+die mich bei meiner Arbeit untersttzt haben.
+
+
+
+                             ------- Ende -------

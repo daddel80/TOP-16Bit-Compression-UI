@@ -1,0 +1,26 @@
+ FRAGEBOGEN zu TOP Version 2.1
+
+Bitte beantworten Sie diese acht Fragen kritisch!
+
+1. Welche ungekl„rten Probleme und Fragen sind bei Ihnen aufgetreten oder 
+   sollten besser dokumentiert werden?
+
+2. Fanden Sie die Hilfe des Top-Programmes informativ, zu detailliert, zu dnn
+   oder zu kompliziert?
+
+3. Welche Funktionen wrden Sie sich zus„tzlich noch wnschen oder weglassen?
+
+4. Gibt es Dinge die Ihnen kritikwrdig sind (zB. Farbe, Bildschirmmaske etc.)?
+
+5. Welche Fehler sind Ihnen bei den Testl„ufen aufgefallen?
+   Bitte bei Beschreibung etwas detailliert.
+
+6. Haben Sie Grammatik-, Ausdrucks- oder Rechtschreibfehler mi Hilfetext oder
+   der Dokumentation gefunden?
+
+7. Waren Ihre Farbeinstellungen korrekt (Farbe1-Dunkelblau,Farbe2-Dunkelgrn)?
+   Bitte geben Sie den Typ und Hersteller Ihrer Grafikkarte an!
+
+8. Haben Sie sonst noch was auf dem Herzen?
+
+Vielen Dank fr Ihre Bemhungen! 

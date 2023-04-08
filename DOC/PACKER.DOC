@@ -1,0 +1,580 @@
+
+ Zip - Format
+ ------------
+
+ 2       (4b50) Signature (an jedem Header, und Multiple Volume)
+
+----------------------------
+
+ 2       (0807) Anfang Multple Volume ohne folgende Bytes (nur zu Beginn des ersten Volume)
+
+----------------------------
+
+ 2       (0403) Normaler Header in der Datei
+ ?
+ ?
+ ?
+ ?
+ 1 byte   0 - stored (no compression)
+          1 - Shrunk
+          2 - Reduced with compression factor 1
+          3 - Reduced with compression factor 2
+          4 - Reduced with compression factor 3
+          5 - Reduced with compression factor 4
+          6 - Imploded
+          7 - Token
+          8 - DeflatX
+ ?
+ 4   Zeit
+ 4   CRC
+ 4   gep. Grî·e
+ 4   orig Grî·e
+ 1   LÑnge des Dateinamen
+ ?
+ ?
+ ?
+ X  Dateiname der angegebenen LÑnge
+
+
+----------------------------------------
+
+ 2  (0201) EndeHeader mit Liste aller Dateien
+ ?
+ ?
+ ?
+ ?
+ 1 verschlÅsselt
+ ?
+ 1 byte   0 - stored (no compression)
+          1 - Shrunk
+          2 - Reduced with compression factor 1
+          3 - Reduced with compression factor 2
+          4 - Reduced with compression factor 3
+          5 - Reduced with compression factor 4
+          6 - Imploded
+          7 - Token
+          8 - DeflatX
+ ?
+ 4   Zeit
+ 4   CRC
+ 4   gep. Grî·e
+ 4   orig Grî·e
+ 1   LÑnge des Dateinamen
+ ?
+ ?
+ ?
+ 1   KommentarlÑnge
+ ?
+ ?
+ ?
+ ?
+ ?
+ 1   Attribut
+ ?
+ ?
+ ?
+ ?
+ ?
+ ?
+ ?
+ X  Dateiname der angegebenen LÑnge
+
+============================================================
+
+ Arj-Format
+ ----------
+
+ Hauptheader
+ -----------
+   2   header id (main and local file) = 0x60 0xEA
+   2   basic header size (from 'first_hdr_size' thru 'comment' below)
+	 = first_hdr_size + strlen(filename) + 1 + strlen(comment) + 1
+	 = 0 if end of archive
+           maximum header size is 2600
+
+   1   first_hdr_size (size up to and including 'extra data')
+   1   archiver version number
+   1   minimum archiver version to extract
+   1   host OS   (0 = MSDOS, 1 = PRIMOS, 2 = UNIX, 3 = AMIGA, 4 = MAC-OS)
+                 (5 = OS/2, 6 = APPLE GS, 7 = ATARI ST, 8 = NEXT)
+                 (9 = VAX VMS)
+   1   arj flags
+	         (0x01 = NOT USED)
+                 (0x02 = OLD_SECURED_FLAG)
+		 (0x04 = VOLUME_FLAG)  indicates presence of succeeding
+				   volume
+	         (0x08 = NOT USED)
+		 (0x10 = PATHSYM_FLAG) indicates archive name translated
+		    	         ("\" changed to "/")
+	         (0x20 = BACKUP_FLAG) indicates backup type archive
+                 (0x40 = SECURED_FLAG)
+   1   security version (2 = current)
+   1   file type        (must equal 2)
+   1   reserved
+   4   date time when original archive was created
+   4   date time when archive was last modified
+   4   archive size (currently used only for secured archives)
+   4   security envelope file position
+   2   filespec position in filename
+   2   length in bytes of security envelope data
+   2   (currently not used)
+   ?   (currently none)
+
+   ?   filename of archive when created (null-terminated string)
+   ?   archive comment  (null-terminated string)
+
+   4   basic header CRC
+
+   2   1st extended header size (0 if none)
+   ?   1st extended header (currently not used)
+   4   1st extended header's CRC (not present when 0 extended header size)
+
+
+
+
+
+ Dateiheader:
+ ------------
+
+ 2 (EA60) Arj header
+ 2 Headergrî·e ab hier
+     Maximum =2600
+     first_hdr_size + strlen(filename) + 1 + strlen(comment) + 1
+     0 falls Ende des Archives
+ 1 first_hdr_size (fÅr Extra Daten)
+ 1 archiv Versionsnummer
+ 1 kleinste Archivversion zum enpacken
+ 1 OS        (0 = MSDOS, 1 = PRIMOS, 2 = UNIX, 3 = AMIGA, 4 = MAC-OS)
+             (5 = OS/2, 6 = APPLE GS, 7 = ATARI ST, 8 = NEXT)
+             (9 = VAX VMS)
+ 1 arj flags
+             (0x01 = NOT USED)
+             (0x02 = OLD_SECURED_FLAG)
+             (0x04 = VOLUME_FLAG)  indicates presence of succeeding
+             			   volume
+             (0x08 = NOT USED)
+             (0x10 = PATHSYM_FLAG) indicates archive name translated
+                                   ("\" changed to "/")
+             (0x20 = BACKUP_FLAG) indicates backup type archive
+                     (0x40 = SECURED_FLAG)
+ 1 Methode   (0 = stored, 1 ... 4 = compressed)
+ 1 file type (0 = binary,    1 = 7-bit text)
+             (3 = directory, 4 = volume label)  in der Regel 0
+ 1 reserved
+ 4 Zeit
+ 4 gep. Grî·e
+ 4 orig. Grî·e
+ 4 CRC
+ 2 filespec position in filename (?)
+ 2 file access mode  (1= Attribut)
+ 2 host data (currently not used)
+ ? extra data
+   4 bytes for extended file starting position when used
+     (these bytes are present when EXTFILE_FLAG is set).
+     0 bytes otherwise.
+
+ ? filename (null-terminated string)
+ ? comment  (null-terminated string) (Endkennung 0A)
+
+ 4 basic header CRC
+
+ 2 1st extended header size (0 if none)
+ ? 1st extended header (currently not used)
+ 4 1st extended header's CRC (not present when 0 extended header size)
+
+       ...
+
+       ?   compressed file
+
+===========================================================
+
+Hyper-Format
+------------
+
+1  CtrlZ : Char;        {Ctrl-Z} {1A}
+2  id : Word;           {'HP'=komprimiert, 'ST'=1 zu 1}
+1  Version : Byte;      {$26}
+4  ArchiveSize,         {komprimierte Grî·e}
+4  OriginSize,          {ungepackte Grî·e}
+4  FDateTime,           {Datum und Zeit}
+4  ChkSum: LongInt;     {PrÅfsumme}
+1  FAttr : Byte;        {Dateiattribute}
+?  FName: String;       {Dateiname}
+   Data: Array[1..ArchiveSize] Of Byte; {gepackte Daten}
+
+
+============================================================
+
+Lha-Format
+----------
+
+1 LÑnge des Kopfes
+1 Unbekannt
+3 -lz
+1 Kompimermethode -$30
+1 -
+4 gepackte Gr
+4 orig. Gr
+4 Zeit
+1 Attribut
+?
+1 LÑnge des Filenamen
+X Filename
+2 CRC
+?
+1 LÑnge des Zusatzheader bis #05
+3 Unbekannt
+X Verzeichnisname(Einzeln) bis FF
+.
+.
+.
+1 Endkennung #05
+
+==================================================
+
+Zoo-Format
+----------
+
+Zoo-Header
+
+20 Zoo Text  (ZOO 2.10 Archive..)
+4  Signature (FD C4 A7 DC)
+4  Start
+4  Zoo_Minus        { VÇrification de concordance }
+1  hîchste Version
+?
+1  kleinste Version
+7  Unbekannt
+
+
+Zoo-FileHeader
+
+4  Signature (FD C4 A7 DC)
+?
+1  0 : Stored
+   1 : Lzw
+4 Sprung zum nÑchsten Header
+4 Unbekannt
+4 Datum (Zeit<->Datum)
+?
+2 CRC
+4 gep. Grî·e
+4 orig Grî·e
+?
+1  0 : nicht gelîscht
+   1 : gelîscht
+2 Unbekannt
+4 Sprungadresse zum Kommentars
+2 Unbekannt
+1 LÑnge des Verzeichnisnamen  inkl. 0
+X Filename nullterminiert
+1 0
+9 Unbekannt letztes Byte 0
+4 Unbekannt
+1 LÑnge des Verzeichnisnamen inkl. 0
+X Verzeichnisname nullterminiert
+1 0
+8 alles 0
+4 Endkennung (28 23 29 40)
+
+Zoo-EndHeader
+-------------
+ist an jedem Ende der Datei vorhanden
+auf diesen zeigt die Spungmarke wenn Ende erreicht
+
+4  Signature (FD C4 A7 DC)
+?
+49 alles 0
+2  Endkennung (83 FC)
+
+
+===============================================
+
+Arc,Pak-Format
+--------------
+1 Signature (1A)
+1  1: 'Stor1';
+   2: 'Stor2';
+   3: 'Packd';
+   4: 'Squzd';
+   5: 'Crun1';
+   6: 'Crun2';
+   7: 'Crun3';
+   8: 'Crun4';
+   9: 'Sqash';
+  10: 'Crushed';
+  11: 'Distill';
+X Filename nullterminiert
+1 0
+4 Unbekannt (gep. Grî·e?)
+3 Unbekannt
+4 gep. Grî·e
+4 Datum (Datum<->Zeit)
+2 Crc
+4 orig Grî·e (nicht vorhanden falls attr=1)
+
+Ende-Header
+-----------
+am Ende jeder Datei vorhanden
+1 Signature (1A)
+1 0
+
+2 (02 FE)
+1 Ziffer der Datei (1..X)
+?
+1 LÑnge des Verzeichnisses (0 im Hauptverz.)
+3 Unbekannt
+X Verzeichnisname
+
+2 (00 FE) ArchivEnde
+
+=================================================
+
+Dwc-Format
+----------
+
+Header wird von hinten nach vorn aufgebaut
+
+
+Anfangsheader (am abs. Ende)
+-------------
+1 (1B)
+15 Unbekannt
+4 Datum der letzten énderung
+4 Anzahl der Dateien
+3 (43 57 44) (DWC)
+
+Fileheader
+----------
+13 Name nullterminiert
+4 orig. Grî·e
+4 Datum      (Format unbekannt)
+4 gepackte Grî·e
+4 Adresse des Anfangs der gepackten Daten
+1 Cattr 1 : Crunched
+        2 : Stored
+2 Unbekannt
+2 CRC
+
+
+==========================================================
+
+SQZ-Format
+----------
+
+
+Archive header:
+    offset  0..4:   Id: 	HLSQZ	    (072d 076d 083d 081d 090d)
+	    5:	    Version:	1	    (049d)
+	    6:	    OS:     76543210
+			    xxxxx000	0   PC-DOS
+			    xxxxx001	1   OS/2
+			    xxxxx010	2   MVS
+			    xxxxx011	3   HPSF(OS/2)
+			    xxxxx100	4   Amiga
+			    xxxxx101	5   Macintosh
+			    xxxxx110	6   *nix
+			    xxxxx111	7   Future use
+			    XXXXXxxx	    Future use
+	    7:	    Flag    76543210
+			    xxxxxxxX	    byte order
+				   0	    Little Endian, Motorola order
+				   1	    Big Endian, Intel order
+			    xxxxxxXx	    Format for Data and time
+				  0	    UNIX format. Number of seconds
+					    since 1:st of january 1970.
+				  1	    DOS format for Date and Time
+					    in file: E8631E19.
+					    Decoded:	1992/08/30 12.31.32
+					    MSB 		    LSB
+					    19	    1E	    63	    E8
+					    76543210765432107654321076543210
+					    00011001000111100110001111101000
+					    YYYYYYYMMMMDDDDDHHHHHMMMMMM22222
+					    12	   8   30   12	 31    16
+					    +=1980		       *=2
+					    1992   08  30   12	 31    32
+			    xxxxx1xx	    Security Envelope
+					    No modifications allowed!
+					    If you do any thing, you'll ruin it
+			    xxxx1xxx	    Whole archive encrypted! Keep OUT
+					    When I say whole, I mean WHOLE.
+					    There's nothing that you can do,
+					    just stay out of trouble.
+					    This archive can't be used until
+					    it's decrypted.
+			    xxx1xxxx	    Unified data
+			    XXXxxxxx	    Future use
+
+
+-------------------------------------------------------------------------------
+File header:
+
+    offset  Size	Comment
+    0	    1		Header size and type  (+3)
+			0	->  End of archive
+			1..18	Se below (Extra data)
+			19..	->  normal file header
+			if normal file
+    1	    1		Header algebraic sum  & 0FFh
+    0	    1:76543210
+	      xxxxXXXX	Method 0..4(15)
+	      XXXXxxxx	Future use
+    1	    4		Compressed size
+    5	    4		Original size
+    9	    4		Last DateTime
+    13	    1		Attributes
+    14	    4		CRC
+    18..    (size-18)	filename, w/o \0.
+_________________________________________________________
+Extra data
+
+    00d     END_OF_ARC: Well, what's there to say?
+
+    01d     COMMENT: Created by SQZ 1.08.2
+	0   2		Number of bytes in comment
+			Uncompressed size = this field - 7
+	2   2		Number of bytes compressed
+	4   1:76543210
+	      xxxxXXXX	Method 0..4(15)
+	      XXXXxxxx	Future use
+	5   4		CRC
+	9   size-7	Comment
+
+
+    02d     PASSWORD:
+	0   2		n
+	2   1	76543210
+		xxxxxxx1    Public
+		xxxxxx1x    Not public
+		xxxxx1xx    Signature included
+		XXXXXxxx    Future use
+	3   n-1
+	    **************************************************************
+	    I'm not done thinking about this one yet, so I'll be in touch.
+	    I've been thinking and... see ya l'ter
+	    **************************************************************
+
+    03d     POSTFIX:	This code are among the last one in the archive (<256)
+	0   2		5
+	2   5		HLSQZ
+			Postfix are automatically added when closing a modified
+			archive, but, who knows, it might change in the future
+			so please check the last 256 bytes, just not the last
+			nine ones, 'cause who knows, someone might have been
+			using XModem...
+
+    04d     SECURITY ENVELOPE:
+	0   2		n
+	2   2		SE version (major.minor.test.mask)0010
+		76543210
+		testmask
+		majomino
+	2   2		SE revision.
+	6   n-2 	None of your business
+
+    05d     VOLUME LABEL
+	0   2		Number of bytes
+	2   4		Time for creation of volume
+	6   1		Attribute, bit 3 always set (if DOS)
+	7   4		Serial number, if available, otherwise 00000000h
+       11   n		Label
+			Number of bytes - 9 -> length of label.
+
+    06d     DIRECTORY
+	0   2		Number of bytes
+	2   1		Algebraic sum & 0xFF
+	3   4		Time for creation of directory
+	7   1		Attribute
+	8   n		Path
+			Number of bytes - 6 --> length of path
+
+    07d     COMMENT: Created by SQZ 1.08.3 and later
+	0   2		Number of bytes in field
+			Compressed size = this field - 7
+	2   2		Number of uncompressed bytes
+	4   1:76543210
+	      xxxxXXXX	Method 0..4(15)
+	      XXXXxxxx	Future use
+	5   4		CRC
+	9   size-7	Comment
+
+    ??d     OTHERWISE:
+	0   2		Number of bytes to skip
+
+
+==========================================================
+
+
+Limit-Format
+------------
+
+Archiv-Header
+----------
+
+3 (1A 4D 4C) (LM )
+1 LÑnge ab Anfang bis zum nÑchsten Header
+1 Unbekannt 0
+1 grî·te Version
+1 kleinste Version
+1 Unbekannt 0
+
+
+Verzeichnis-Header
+------------------
+alle Dateien welche nach diesem Header kommen sind fÅr diesen gÅltig!
+Dateien werden zwischengeschoben
+
+2 (D1 80) Signature
+1 LÑnge ab Anf. bis nÑchster Header
+1 0
+X Verzeichnisname nullterminiert
+1 0
+
+File-Header (auch fÅr Verzeichnisse)
+-----------
+2 (F1 23) Signature
+1 LÑnge ab Anfang bis zum nÑchsten Header
+1 0
+1 OS 0 : DOS
+     2 : VMS
+       .
+       .
+1 0
+4 Datum
+1 Fileattr. (Directory =10)
+2 0
+4 orig.Grî·e
+4 gepackte Grî·e
+4 CRC
+X Filename (nullterminiert)
+1 0
+
+Endkennung
+----------
+3 (F8 13) Signature
+2 LÑnge der Endkennung (5)
+X 0
+
+
+===============================================================
+
+Bsa-format
+----------
+
+6 Anfangssignature (00 00 47 53 42 FF) (BSG)
+
+
+File-Header
+-----------
+4 Anfangssignature (41 53 42 FF)
+1 0
+1 LÑnge bis Ende (+10)
+1 Unbekannt (Flags)
+3 0
+4 Datum
+X Name
+4 orig Grî·e
+4 gep.Grî·e
+4 FileCRC
+4 KopfCrc

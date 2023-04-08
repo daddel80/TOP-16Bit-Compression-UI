@@ -1,0 +1,34 @@
+  1   :  Zu wenig Speicher!
+  2   :  Fehler beim Schreiben in das Archiv!
+  3   :  Fehler beim Schreiben in temp. Archiv!
+  4   :  Fehler beim Schreiben der zu entp. Datei!
+  5   :  Fehler beim Lesen aus Archiv!
+  6   :  Fehler beim Lesen der zu packenden Datei!
+  7   :  Fehler beim ™ffnen der Archivdatei!
+  8   :  Fehler beim ™ffnen der zu packenden Datei!
+  9   :  Fehler beim ™ffnen der SFX/SFXjr.exe!
+  10  :  Fehler beim ™ffnen der Temp- oder Archivedatei!
+  11  :  Fehler beim Anlegen der Archivdatei!
+  12  :  Fehler beim Anlegen der temp. Archivdatei!
+  13  :  Fehler beim Anlegen der zu entp. Datei!
+  14  :  Fehler beim Erzeugen einer EXE-Archivdatei!
+  15  :  Fehler beim Schlieáen der Archivdatei!
+  16  :  Fehler beim Schlieáen der temp. Archivdatei!
+  17  :  Fehler beim Schlieáen der zu entp. Archivdatei!
+  18  :  Fehler beim Schlieáen der entp. Datei!
+  19  :  Archiv ist besch„digt!
+  20  :  Archiv ist besch„digt!
+  21  :  Zu viele Endungen zum kopieren (<= 16)!
+  22  :  Unbekannter Schalter angegeben!
+  23  :  Unerlaubte Kombination von Schaltern!
+  24  :  Anwender brach mit Strg-Pause oder Strg-C ab!
+  25  :  Unbekanntes Archivefomat!
+  26  :  Diese Optionen sind nicht mit dem SFX erlaubt!
+  27  :  Archivedatei war nicht fr MS-DOS!
+  28  :  CRC-Fehler beim Entpacken!
+  29  :  SQZ.EXE wurde manipuliert!
+  30  :  Besch„digte Archivedatei!
+  31  :  Kann gesichertes Archiv nicht h„ndeln!
+  32  :  Gesichertes Archiv kann nicht ver„ndert werden!
+  128 :  Angew„hlte Datei wurde nicht gefunden!
+  129 :  Konnte Dateien nicht bewegen!
