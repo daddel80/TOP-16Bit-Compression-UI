@@ -2,6 +2,8 @@
 
 This MS-DOS based user interface (UI) for compression programs is a project from the early 90s, designed to provide a graphical front-end for various pre-Windows compression programs. It is hosted on GitHub for programmers interested in exploring the source code, development environment, and usage.
 
+![TOP-16Bit-Compression-UI Screenshot](IMAGES/top_screen_1.png)
+
 ## Table of Contents
 - [UI Features](#ui-features)
 - [Development Environment](#development-environment)
